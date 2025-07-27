@@ -1,108 +1,109 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>VEGETA-BOT-MB | Interfaz Hacker</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrayanOFC Streaming</title>
   <style>
     body {
-      background-color: #000;
-      color: #00ff00;
-      font-family: 'Courier New', monospace;
       margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
     }
-    .glow {
-      text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
-    }
-    .terminal-box {
-      background: #111;
-      border: 1px solid #0f0;
+    header {
+      background-color: #111;
       padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #0f0;
-    }
-    a.btn-hack {
-      background-color: transparent;
-      border: 2px solid #00ff00;
-      color: #00ff00;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    a.btn-hack:hover {
-      background-color: #00ff00;
-      color: #000;
-    }
-    hr {
-      border-color: #0f0;
-    }
-    footer {
       text-align: center;
-      color: #0f0;
-      background: #111;
-      padding: 15px;
-      font-size: 0.9rem;
     }
-    code {
-      color: #00ff00;
-      background: #111;
-      padding: 3px 6px;
-      border-radius: 4px;
+    header h1 {
+      color: #e50914;
+      font-size: 2em;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .pelicula {
+      background-color: #222;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #000;
+    }
+    iframe {
+      width: 100%;
+      height: 180px;
+      border: none;
+      border-radius: 5px;
+    }
+    .titulo {
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+    .descripcion {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    .share {
+      text-align: center;
+      margin: 20px;
+    }
+    .share button {
+      background: #e50914;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
     }
   </style>
 </head>
-<body>  <div class="container py-5">
-    <div class="text-center mb-4">
-      <h1 class="display-4 glow">VEGETA-BOT-MB</h1>
-      <p class="glow">Interfaz privada de comando avanzada - modo hacker activado</p>
-      <a class="btn-hack" href="https://wa.me/525538543591?text=.menu%20" target="_blank">
-        <i class="fab fa-whatsapp"></i> Ejecutar Bot
-      </a>
-    </div><div class="terminal-box mb-5">
-  <h3 class="glow">📋 Comandos Disponibles</h3>
-  <ul>
-    <li><code>.play [nombre]</code> — Descargar música desde YouTube</li>
-    <li><code>.sticker</code> — Convertir imagen en sticker</li>
-    <li><code>.menu</code> — Mostrar todos los comandos</li>
-    <li><code>.ia [texto]</code> — Consultar IA integrada</li>
-    <li><code>.ban [número]</code> — Bloquear usuario (admin)</li>
-    <li><code>.ytmp3 [link]</code> — Extraer audio de YouTube</li>
-    <li><code>.img [texto]</code> — Generar imagen por IA</li>
-  </ul>
-</div>
+<body>
+  <header>
+    <h1>Bienvenido al servicio de BrayanOFC</h1>
+    <p>Disfruta películas y trailers desde YouTube</p>
+  </header>
 
-<div class="terminal-box mb-5">
-  <h3 class="glow">🧠 Descripción</h3>
-  <p>VEGETA-BOT-MB es un bot de WhatsApp altamente personalizado, con habilidades de inteligencia artificial, descarga multimedia, manipulación de imágenes, administración de grupos, generadores automáticos, comandos secretos y más.</p>
-</div>
+  <div class="catalogo">
+    <!-- Ejemplo de película -->
+    <div class="pelicula">
+      <iframe src="https://www.youtube.com/embed/YoHD9XEInc0" allowfullscreen></iframe>
+      <div class="titulo">Inception</div>
+      <div class="descripcion">Trailer oficial de la película Inception.</div>
+    </div>
 
-<div class="terminal-box mb-5">
-  <h3 class="glow">🔒 Panel Staff (Privado)</h3>
-  <p>Acceso exclusivo para el desarrollador del sistema.</p>
-  <ul>
-    <li>📊 Estadísticas globales</li>
-    <li>🧾 Logs en tiempo real</li>
-    <li>🛑 Sistema de ban automático/manual</li>
-    <li>⚙️ Activación remota de módulos</li>
-    <li>🔗 Conexión directa a base de datos</li>
-    <li>🧬 Control de IA integrada</li>
-  </ul>
-  <p><i class="fas fa-terminal"></i> Acceso restringido. Requiere token de seguridad.</p>
-</div>
+    <div class="pelicula">
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+      <div class="titulo">Frozen</div>
+      <div class="descripcion">Let it go - Video musical de la película Frozen.</div>
+    </div>
 
-<div class="terminal-box">
-  <h3 class="glow">🌐 Enlaces y Recursos</h3>
-  <ul>
-    <li><a href="https://github.com/BrayanOFC" class="btn-hack" target="_blank">https://github.com/BrayanOFC/VEGETA-BOT-MB</a></li>
-    <li><a href="https://Vercel.com" class="btn-hack" target="_blank"></a></li>
-    <li><a href="https://wa.me/526641784469" class="btn-hack" target="_blank">Contactar al creador</a>Sitio desplegado en Vercel</li>
-  </ul>
-</div>
+    <div class="pelicula">
+      <iframe src="https://www.youtube.com/embed/sGbxmsDFVnE" allowfullscreen></iframe>
+      <div class="titulo">Avengers: Endgame</div>
+      <div class="descripcion">Trailer oficial de Avengers: Endgame.</div>
+    </div>
+  </div>
 
-  </div>  <footer>
-    <p>© 2025 VEGETA-BOT-MB — Sistema Privado Desarrollado por su Creador</p>
-  </footer>  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body>
+  <div class="share">
+    <button onclick="compartir()">Compartir esta página</button>
+  </div>
+
+  <script>
+    function compartir() {
+      if (navigator.share) {
+        navigator.share({
+          title: 'BrayanOFC Streaming',
+          text: '¡Mira esta página con películas de YouTube!',
+          url: window.location.href
+        });
+      } else {
+        alert("Tu navegador no soporta el botón de compartir automático.");
+      }
+    }
+  </script>
+</body>
 </html>
