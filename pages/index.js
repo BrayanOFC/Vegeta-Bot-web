@@ -1,17 +1,15 @@
-import { connectDB } from "../../lib/mongo"
-import User from "../../models/User"
+import Link from "next/link"
 
-export default async function handler(req, res) {
-  if (req.method !== "POST") return res.status(405).end()
-
-  await connectDB()
-  const { userId, cost } = req.body
-  const user = await User.findById(userId)
-
-  if (!user) return res.status(404).json({ msg: "Usuario no encontrado" })
-  if (user.coins < cost) return res.status(400).json({ msg: "Fondos insuficientes" })
-
-  user.coins -= cost
-  await user.save()
-  res.json({ success: true, user })
+export default function Home() {
+  return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>🎮 Bienvenido a WePlay 2.0</h1>
+      <p>Juega, gana monedas y sube de nivel 🚀</p>
+      <div>
+        <Link href="/login"><button>Iniciar Sesión</button></Link>
+        <Link href="/register"><button>Registrarse</button></Link>
+        <Link href="/shop"><button>Tienda</button></Link>
+      </div>
+    </div>
+  )
 }
